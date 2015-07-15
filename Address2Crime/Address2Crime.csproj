@@ -85,6 +85,8 @@
   <ItemGroup>
     <Compile Include="Coordinator.cs" />
     <Compile Include="CoordinatorTests.cs" />
+    <Compile Include="CrimeDetector.cs" />
+    <Compile Include="CrimeDetectorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
