@@ -34,6 +34,10 @@
       <HintPath>..\packages\ExpectedObjects.1.1.1\lib\net40\ExpectedObjects.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Geocoding, Version=3.3.0.0, Culture=neutral, PublicKeyToken=7c714700b88674c7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Geocoding.net.3.3.0\lib\net40\Geocoding.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Moq, Version=4.2.1402.2112, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <HintPath>..\packages\Moq.4.2.1402.2112\lib\net40\Moq.dll</HintPath>
       <Private>True</Private>
@@ -80,7 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Coordinator.cs" />
-    <Compile Include="Example.cs" />
+    <Compile Include="CoordinatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

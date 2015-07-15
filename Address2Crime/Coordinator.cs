@@ -1,4 +1,9 @@
-﻿using PoliceUk;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Geocoding;
+using Geocoding.Google;
+using PoliceUk;
 
 namespace Address2Crime
 {
@@ -6,7 +11,11 @@ namespace Address2Crime
     {
         public Geoposition GetCoordinatesFromAddress(string address)
         {
-            throw new System.NotImplementedException();
+            IGeocoder geocoder = new GoogleGeocoder();// { ApiKey = "this-is-my-optional-google-api-key" };
+            IEnumerable<Address> addresses = geocoder.Geocode(address);
+
+            Address detectedAddress = addresses.First();
+            return new Geoposition(detectedAddress.Coordinates.Latitude, detectedAddress.Coordinates.Longitude);
         }
     }
 }
